@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  aviasearcher:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+     - "55721:80"
+
+  aviadata:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "55727:80"
+
+
+  auth.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "55001:80"
+
